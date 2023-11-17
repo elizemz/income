@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Login() {
+const Create = () => {
 	return (
 		<main>
 			<div className="flex">
-				<div className="login">
+				<div className="signup">
 					<div className="geld">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -44,19 +44,29 @@ export default function Login() {
 							/>
 						</svg>
 					</div>
-					<div>Welcome Back</div>
-					<div>Please enter your details:</div>
+					<div>Create Geld account</div>
+					<div>Sign up below to create your Wallet account:</div>
+					<input type="text" placeholder="Name" className="infoinput" />
 					<input type="text" placeholder="Email" className="infoinput" />
 					<input type="text" placeholder="Password" className="infoinput" />
-					<div className="loginbutton">Log in</div>
+					<input
+						type="text"
+						placeholder="Password Confirmation"
+						className="infoinput"
+					/>
+					<Link href="/currency">
+						<div className="loginbutton">Sign Up</div>
+					</Link>
 					<div className="flex">
-						<div>Don't have an account?</div>
-						<Link href="/create">
-							<div className="text-blue-600">‎‎ ‎ ‎ Sign up!</div>
+						<div>Already have an account?</div>
+						<Link href="/">
+							<div className="text-blue-600">‎‎ ‎ ‎ Log in!</div>
 						</Link>
 					</div>
 				</div>
 			</div>
 		</main>
 	);
-}
+};
+
+export default Create;
