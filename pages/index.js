@@ -48,7 +48,9 @@ export default function Login() {
 					<div>Please enter your details:</div>
 					<input type="text" placeholder="Email" className="infoinput" />
 					<input type="text" placeholder="Password" className="infoinput" />
-					<div className="loginbutton">Log in</div>
+					<Link href="/dashboard">
+						<div className="loginbutton">Log in</div>
+					</Link>
 					<div className="flex">
 						<div>Don't have an account?</div>
 						<Link href="/create">
