@@ -123,7 +123,7 @@ export default function Currency() {
 				</select>
 				<div className="reminder">
 					Your base currency should be the one you use most often. All
-					transaction in other currencies will be calculated based on this one{" "}
+					transaction in other currencies will be calculated based on this one.{" "}
 				</div>
 				<Link href="/balance">
 					<div className="confirm">Confirm</div>

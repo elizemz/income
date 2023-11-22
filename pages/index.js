@@ -44,7 +44,7 @@ export default function Login() {
 							/>
 						</svg>
 					</div>
-					<div>Welcome Back</div>
+					<div>Welcome Back!</div>
 					<div>Please enter your details:</div>
 					<input type="text" placeholder="Email" className="infoinput" />
 					<input type="text" placeholder="Password" className="infoinput" />

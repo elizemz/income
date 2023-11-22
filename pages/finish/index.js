@@ -119,7 +119,7 @@ export default function Finish() {
 				<div className="select">Good Job!</div>
 				<div className="reminder">
 					Your very first account has been created. Now continue to dashboard
-					and start tracking
+					and start tracking.
 				</div>
 				<Link href="/dashboard">
 					<div className="confirm">Go to Dashboard</div>
