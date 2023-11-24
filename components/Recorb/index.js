@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Add from "../Add";
 
 export default function Recorb() {
+	const [showAdd, setShowAdd] = useState(false);
+
 	return (
 		<main>
 			<div className="recordsall">
 				<div className="hud">
 					<div className="recadd">
 						<div className="recword">Records</div>
-						<div className="addblue">+ Add</div>
+						<button className="addblue" onClick={() => setShowAdd(true)}>
+							+ Add
+						</button>
 					</div>
 					<input placeholder="Search" type="text" className="searchinput" />
 					<div className="types">
@@ -403,6 +408,7 @@ export default function Recorb() {
 					</div>
 				</div>
 			</div>
+			<Add isVisible={showAdd} onClose={() => setShowAdd(false)} />
 		</main>
 	);
 }

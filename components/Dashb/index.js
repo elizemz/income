@@ -1,4 +1,5 @@
 import React from "react";
+import { Chart } from "chart.js";
 import Link from "next/link";
 
 export default function Dashb() {
